@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audio Uploader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="snowflakes" aria-hidden="true"></div>
+  
+  <div class="container">
+    <h1 class="title">🎵 Audio Uploader</h1>
+    
+    <!-- File Input -->
+    <label class="upload-btn">
+      <input type="file" id="fileInput" multiple accept=".mp3,.wav" hidden />
+      Import Files
+    </label>
+
+    <!-- Generate Link -->
+    <button id="generateLinkBtn" class="generate-btn">Generate Link</button>
+
+    <!-- List -->
+    <ul id="fileList"></ul>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
